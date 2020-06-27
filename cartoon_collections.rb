@@ -12,14 +12,11 @@ def summon_captain_planet(planet)
   end
 end
 
-def long_planteer_calls(calls_long)
-  answer = false 
-  calls_long.each do |call|
-    if call.length > 4
-      answer = true
-    end
-  end
-    answer
+def long_planeteer_calls(list)
+  line.any? do |word|
+    word.length > 4
+      puts false 
+  end 
 end
 
 def find_the_cheese(cheese)
